@@ -1,0 +1,15 @@
+$(document).ready(function(){
+	$('#AuthModal form').submit(function(event){
+		var url = $(this).attr('action');
+		var id = $(this).attr('id');
+		$.ajax({
+			url: url,
+			type: 'POST',
+			data: $(this).serialize(),
+			success: function(content){
+				$('#ajax_form_auth').html(content);
+			}
+		});
+		event.preventDefault();
+	});
+});

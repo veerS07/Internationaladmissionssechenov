@@ -1,0 +1,80 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 03/06/2016 09:55
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("icon-font-ex/Flaticon.eot");
+  src: url("icon-font-ex/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("icon-font-ex/Flaticon.woff") format("woff"),
+       url("icon-font-ex/Flaticon.ttf") format("truetype"),
+       url("icon-font-ex/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("icon-font-ex/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  	font-family: Flaticon;
+    font-size: 20px;
+	font-style: normal;
+}
+
+.flaticon-add-button-inside-black-circle:before { content: "\f100"; }
+.flaticon-arrows:before { content: "\f101"; }
+.flaticon-arrows-1:before { content: "\f102"; }
+.flaticon-arrows-2:before { content: "\f103"; }
+.flaticon-arrows-3:before { content: "\f104"; }
+.flaticon-black:before { content: "\f105"; }
+.flaticon-calendar:before { content: "\f106"; }
+.flaticon-cancel:before { content: "\f107"; }
+.flaticon-cancel-button:before { content: "\f108"; }
+.flaticon-check:before { content: "\f109"; }
+.flaticon-circle:before { content: "\f10a"; }
+.flaticon-clip:before { content: "\f10b"; }
+.flaticon-cross-remove-sign:before { content: "\f10c"; }
+.flaticon-down-arrow:before { content: "\f10d"; }
+.flaticon-facebook-letter-logo:before { content: "\f10e"; }
+.flaticon-hammer:before { content: "\f10f"; }
+.flaticon-instagram-social-network-logo-of-photo-camera:before { content: "\f110"; }
+.flaticon-interface:before { content: "\f111"; }
+.flaticon-interface-1:before { content: "\f112"; }
+.flaticon-interface-2:before { content: "\f113"; }
+.flaticon-left-arrow:before { content: "\f114"; }
+.flaticon-letter:before { content: "\f115"; }
+.flaticon-magnifying-glass:before { content: "\f116"; }
+.flaticon-person:before { content: "\f117"; }
+.flaticon-photo-camera:before { content: "\f118"; }
+.flaticon-pin:before { content: "\f119"; }
+.flaticon-play-button:before { content: "\f11a"; }
+.flaticon-print:before { content: "\f11b"; }
+.flaticon-refresh:before { content: "\f11c"; }
+.flaticon-right-arrow:before { content: "\f11d"; }
+.flaticon-rss:before { content: "\f11e"; }
+.flaticon-suitcase:before { content: "\f11f"; }
+.flaticon-technology:before { content: "\f120"; }
+.flaticon-tool:before { content: "\f121"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f122"; }
+.flaticon-up-arrow:before { content: "\f123"; }
+.flaticon-vision:before { content: "\f124"; }
+.flaticon-vk-social-network-logo:before { content: "\f125"; }
+.flaticon-youtube-play-button:before { content: "\f126"; }
+.flaticon-youtube-symbol:before { content: "\f127"; }
+.flaticon-shape:before { content: "\f128"; }
+.flaticon-paper-plane:before { content: "\f129"; }
+
+
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 31/10/2016 14:06
+  	*/
+

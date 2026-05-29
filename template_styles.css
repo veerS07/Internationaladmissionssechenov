@@ -1,0 +1,121 @@
+ol.num {
+	margin: 15px 0 15px 0;
+}
+ol.num li {
+    list-style-type: decimal;
+    margin: 0 0 5px 0px;
+	padding: 0 0 0 10px;
+}
+ol.num ol {
+	margin: 15px 0 30px 15px;
+}
+ol.num li + ol li{
+    list-style-type: lower-alpha;
+    margin: 0 0 5px 0px;
+	padding: 0 0 0 10px;
+}
+
+.marg-40 {
+	margin-top: -40px;
+}
+.marg40 {
+	margin-top: 40px;
+}
+
+
+.science-banner1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/sc1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.science-banner2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/sc2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.science-banner3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/sc3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.p-nav-link.center {
+    text-align: center;
+}
+.round-img {
+	border-radius: 100%;
+	display: block;
+    margin: 0 auto 10px;
+	max-width: 250px;
+	box-shadow: 0px 0px 3px #8da8d2;
+    border: 3px solid #fff;
+}
+.p-nav-link:hover .round-img {
+    box-shadow: none;
+    border-color: #004899;
+}
+a.p-nav-link.select {
+	cursor: default;
+}
+
+.header-icon-wrapper a {
+	color: #4f91da;
+}
+.header-icon-wrapper a:hover {
+	color: #004899;
+	text-decoration: none;
+}
+.glasses-icon:hover {
+	color: #004899;
+	text-decoration: none;	
+}
+
+.page-header-inner h1 {
+    font-family: 'Alumna', serif;
+}
+
+.fix-width img[align="left"] {
+	margin: 0px 20px 20px 0;
+}
+.fix-width img[align="right"] {
+	margin: 0px 0px 20px 20px;
+}
+
+.medialibrary-header a:hover {text-decoration: none;}
+
+.fix-width img {
+	max-width: 100%;
+	height: auto;
+}
+
+font.errortext {display: none;}
+
+
+
+
+
+
+
+
+/*прокрутка левого меню*/
+@media screen and (max-width: 1366px){
+	.desktop-menu{
+		position: relative;
+	}
+}
+
+
+
+.headerstitle {
+font-size: 11px;
+margin-left: 50px;
+}

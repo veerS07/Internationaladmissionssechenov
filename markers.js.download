@@ -1,0 +1,81 @@
+$(document).ready(function() {
+	var contact_map = $('#contact-map');
+	
+	if( contact_map.length > 0){
+		var myLatLng = new google.maps.LatLng(55.727965, 37.5725623);
+		MYMAP.init('#contact-map', myLatLng, 10);
+	
+		$(window).load(function(e){
+			MYMAP.placeMarkers('/local/templates/MMA/components/bitrix/news.list/contacts_map/markers.php');
+		});
+	}
+});
+	var MYMAP = {
+		map: null,
+		bounds: null
+	}
+	
+	MYMAP.init = function(selector, latLng, zoom) {
+		var myOptions = {
+			zoom:zoom,
+			center: latLng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		this.map = new google.maps.Map($(selector)[0], myOptions);
+		this.bounds = new google.maps.LatLngBounds();
+	}
+	 
+	MYMAP.placeMarkers = function(filename) {
+		$.get(filename, function(xml){
+			$(xml).find("marker").each(function(){
+				var name = $(this).find('name').text();
+				var address = $(this).find('address').text();
+				var phone = $(this).find('phone').text();
+				var email = $(this).find('email').text();
+				
+				var link = $(this).find('link').text();
+	 
+				// create a new LatLng point for the marker
+				var lat = $(this).find('lat').text();
+				var lng = $(this).find('lng').text();
+				var point = new google.maps.LatLng(parseFloat(lat),parseFloat(lng));
+	 
+				// extend the bounds to include the new point
+				MYMAP.bounds.extend(point);
+	 
+				var marker = new google.maps.Marker({
+					position: point,
+					map: MYMAP.map
+				});
+	 
+				var infoWindow = new google.maps.InfoWindow();
+	
+				var html='<div class="g-baloon">' +
+							'<div class="g-baloon-title"><strong>' + name + '</strong></div>' +
+							'<ul class="p-contact-list">' +
+								'<li class="p-contact-item-line">' +
+									'<i class="contact-mark flaticon-pin"></i>' +
+									'<span class="contact-adr">' + address + '</span>' +
+								'</li>' +
+								'<li class="p-contact-item-line">' +
+									'<i class="contact-phone flaticon-technology"></i>' +
+									'<span class="contact-adr">' + phone + '</span>' +
+								'</li>' +
+								'<li class="p-contact-item-line">' +
+									'<i class="contact-msg flaticon-letter"></i>' +
+									'<span class="contact-email">' + email + '</span>' +
+								'</li>' +
+							'</ul>' +
+							'<a href="'+ link +'" class="more-info-btn">Подробнее</a>' +
+						'</div>';
+	
+				google.maps.event.addListener(marker, 'click', function() {
+					infoWindow.close();
+					infoWindow.setContent(html);
+					infoWindow.open(MYMAP.map, marker);
+				});
+				MYMAP.map.fitBounds(MYMAP.bounds);
+	
+			});
+		});
+	}

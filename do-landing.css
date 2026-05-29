@@ -1,0 +1,232 @@
+	.open-door-landing{
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	.open-door-landing h3,
+	.open-door-landing .h3{
+		  font-size: 30px;
+		  font-weight: 500;
+	}
+	
+	.open-door-landing h4,
+	.open-door-landing .h4{
+		margin-bottom: 15px;
+		margin-top: 30px;
+		font-size: 24px;
+	  font-weight: 500;
+	}
+	.open-door-landing ul, .open-door-landing ul li{
+		list-style-type: disc;  
+	}
+	.open-door-landing ol, .open-door-landing ol li{
+		list-style-type: decimal;  
+	}
+	.open-door-landing ol,
+	.open-door-landing ul{
+		margin: 15px 0;
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+	.open-door-landing ol li,
+	.open-door-landing ul li{
+		margin: 10px 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	
+	.do-video-box{
+		position: relative;
+		width: 100%;
+		max-width: 720px;
+		padding-top: 37%;
+	}
+	.do-video-box iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+	.open-door-landing > *:last-child{
+		margin-bottom: 0;
+	}
+	.open-door-landing p{
+		margin: 15px 0;
+		font-size: 18px;
+		line-height: 1.3; 
+	}
+	.open-door-landing p a{
+		text-decoration: underline;
+	}
+	.open-door-landing p a:hover{
+		text-decoration: none;
+	}
+	.fix-width .open-door-landing  table td, .fix-width.open-door-landing  table th{
+		vertical-align: top;
+	}
+	
+	
+	
+	
+	
+	.od-header{
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.od-header__res{
+		display: flex;
+		gap: 20px;
+	}
+	.od-header-resource{
+		display: block;
+		 
+	} 
+	.od-header-resource--globaluni{
+		max-width: 350px;
+	}
+	.od-header-resource--globalun{
+		max-width:  255px;
+	}
+	.od-header-resource img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.od-header__soc{
+		display: flex;
+		gap: 20px;
+	}
+	.od-soc-link{
+		display: block;
+		width: 50px;
+		height: 50px;
+	}
+	.od-soc-link img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.od-hall{
+		margin-top: 70px;
+	}
+	.od-hall .od-btn{
+		margin-top: 30px;
+	}
+		
+	.od-hall h2{
+		font-size: 50px;
+		font-weight: 500;
+	}
+	.open-door-landing .od-undertitle{
+		font-size: 20px;
+	}
+	.od-section{
+		margin: 70px 0;
+	}
+	.od-btn{
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 12px 60px;
+		-webkit-transition: all .3s;
+		transition: all .3s; 
+		font-size: 1.2rem;
+		line-height: 1rem; 
+		text-align: center;
+		color: #fff;
+		border: 1px solid #004899;
+		border-radius: 15px;
+		background-color: #004899;
+	}
+	.od-btn:hover{
+		text-decoration: none;
+		background-color: #ffffff;
+		color: #004899;
+	}
+	
+	.table-box{
+		position: relative;
+		overflow: auto;
+	}
+		
+	
+	/* ======================================================================== */
+	
+	@media screen and (max-width: 800px){
+		.od-hall h2 {
+			font-size: 36px; 
+		}
+		.open-door-landing  .od-undertitle {
+			font-size: 18px;
+		}
+		.open-door-landing{
+			font-size: 16px; 
+		}
+		.od-btn { 
+			padding: 12px 30px; 
+			font-size: 1rem; 
+			border-radius: 10px; 
+		}
+		.open-door-landing h3,
+		.open-door-landing .h3{
+			  font-size: 24px; 
+		}
+		
+		.open-door-landing h4,
+		.open-door-landing .h4{ 
+			font-size: 20px;
+		  font-weight: 500;
+		}
+		.open-door-landing ol,
+		.open-door-landing ul{
+			margin: 10px 0;
+		}
+		.open-door-landing ol li,
+		.open-door-landing ul li{ 
+			font-size: 16px; 
+		}
+		.open-door-landing p{
+			font-size: 16px; 
+		}
+		.od-section {
+			margin: 50px 0;
+		}
+	}
+	@media screen and (max-width: 800px){
+		.od-header { 
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		.od-soc-link {
+			display: block;
+			width: 35px;
+			height: 35px;
+		}
+	}
+	@media screen and (max-width: 500px){
+		.od-header__res { 
+			gap: 10px;
+			flex-direction: column;
+		}
+		.od-header-resource--globaluni,
+		.od-header-resource--globalun {
+			max-width: 100%;
+		}
+		.od-header__soc{
+			justify-content: center;
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 450px){
+		.od-hall h2 {
+			font-size: 30px;
+		}
+	}
+	    

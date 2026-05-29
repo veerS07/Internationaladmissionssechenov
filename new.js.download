@@ -1,0 +1,15 @@
+$(document).ready(function() {
+	$('#refresh').click(function(event){
+		
+		$.get(
+				UpdateFatcts,
+				{},
+					onAjaxSuccess
+			);
+		event.preventDefault()
+	});
+})
+function onAjaxSuccess(data)
+{
+	$('.fact-inner_span').html(data);
+}

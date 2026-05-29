@@ -1,0 +1,7 @@
+.breadcrumb-item {
+	margin: 0;
+}
+.breadcrumb-item:after {
+	content: '\2013';
+	margin: 0 5px 0 5px;
+}
